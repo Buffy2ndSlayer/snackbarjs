@@ -65,13 +65,13 @@
 
             if (!isset(options.id)) {
                 options.id = "snackbar" + Date.now();
-                $snackbar = $("<div/>").attr("id", options.id).attr("class", "snackbar");
+                $snackbar = $("<div/>").attr("id", options.id).attr("class", "snackbar").attr("role", "alert");
 				snackbarNew = true;
             } else {
                 if ($("#" + options.id).length) {
 					$snackbar = $("#" + options.id);
 				} else {
-					$snackbar = $("<div/>").attr("id", "" + options.id).attr("class", "snackbar");
+					$snackbar = $("<div/>").attr("id", "" + options.id).attr("class", "snackbar").attr("role", "alert");
 					snackbarNew = true;
 				}
             }
