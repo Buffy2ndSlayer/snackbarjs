@@ -14,7 +14,7 @@
 }(function( $ ){
 
     $(document).ready(function() {
-        $("body").append("<div id=snackbar-container/>");
+        $("body").append("<div id='snackbar-container' role='region'/>");
     });
 
     function isset(variable) {
